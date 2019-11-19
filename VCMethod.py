@@ -1,10 +1,10 @@
 #input variables
-probability_success=input("Probability of Successful Exit: ")
-expected_retention=input("Expected Retention of Investment: ")
 investment_amount=input("Amount to Invest ($mm): ")
 ownership=input("% Ownership: ")
 exit_value=input("Expected Exit Value ($mm): ")
 exit_years=input("Years Until Exit: ")
+probability_success=input("Probability of Successful Exit: ")
+expected_retention=input("Expected Retention of Investment: ")
 
 #type conversion and data check
 probability_success = float(probability_success)
