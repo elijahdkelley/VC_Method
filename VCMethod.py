@@ -24,7 +24,7 @@ if ownership >1:
     ownership=ownership/100
     pass
 
-exit_value=int(exit_value)
+exit_value=float(exit_value)
 
 exit_years=int(exit_years)
 
