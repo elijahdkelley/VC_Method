@@ -1,4 +1,5 @@
 from VCFeeStructure import *
+
 #input variables
 investment_amount=input("Amount to Invest ($mm): ")
 ownership=input("% Ownership: ")
@@ -31,6 +32,8 @@ exit_years=int(exit_years)
 
 #static variables
 vc_cost_of_capital=.15
+fee_structure = calc_fee_structure(100,80)
+gp_percent = calc_gp_percent(100)
 
 #calculated variables
 target_multiple=(1+vc_cost_of_capital)**exit_years/probability_success
