@@ -1,4 +1,12 @@
-def calc_lp_valuation (cost_of_capital, exit_years, probability_success, expected_retention, exit_value, ownership, gp_percent):
+def calc_lp_valuation (
+        cost_of_capital,
+        exit_years,
+        probability_success,
+        expected_retention,
+        exit_value,
+        ownership,
+        gp_percent):
+
     #format and convert
     cost_of_capital = float(cost_of_capital)
     probability_success = float(probability_success)
@@ -27,19 +35,18 @@ def calc_lp_valuation (cost_of_capital, exit_years, probability_success, expecte
 
     return lp_valuation
 
-def calc_target_multiple (cost_of_capital, exit_years, probability_success):
+def calc_target_multiple (
+        cost_of_capital,
+        exit_years,
+        probability_success):
 
     target_multiple=(1 + cost_of_capital)**exit_years/probability_success
     return target_multiple
 
-def calc_present_total_valuation(exit_value, expected_retention, target_multiple):
+def calc_present_total_valuation(
+        exit_value,
+        expected_retention,
+        target_multiple):
 
     present_total_valutation = exit_value*expected_retention/target_multiple
     return present_total_valutation
-
-
-#Debug
-#test = calc_lp_valuation (.15,5,.3,.5,250,.33,.1)
-#print (test)
-
-#input("")
